@@ -22,7 +22,7 @@ const App = () => {
 };
 
 const getAllTodos = async setTodos => {
-	const response = await fetch('https://test-sandra.onrender.com/api/todos');
+	const response = await fetch('http://localhost:3000/api/todos');
 	const allTodos = await response.json();
 	setTodos(allTodos);
 };
