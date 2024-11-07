@@ -11,6 +11,12 @@ const App = () => {
 		<>
 			<GlobalStyles />
 			<h1>REACT OK</h1>
+			{todos &&
+				todos.map(todo => (
+					<div key={todo._id}>
+						<h2>{todo.task}</h2>
+					</div>
+				))}
 		</>
 	);
 };
