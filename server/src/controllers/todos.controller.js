@@ -8,7 +8,9 @@ todosController.getAllTodos = async (req, res) => {
   try {
     const allTodos = await TodoModel.find();
     res.send(allTodos);
-  } catch (error) {}
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 todosController.createTodo = async (req, res) => {
